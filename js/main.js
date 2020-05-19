@@ -14,11 +14,20 @@ $('#navbar a, .btn').on('click', function(event) {
 
     const hash = this.hash;
 
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - 70
-      },
-      800
-    );
+    if (window.matchMedia("(max-width: 560px)").matches) {
+      $('html, body').animate(
+        {
+          scrollTop: $(hash).offset().top - 95
+        },
+        800
+      );
+    } else {
+      $('html, body').animate(
+        {
+          scrollTop: $(hash).offset().top - 70
+        },
+        800
+      );
+    }  
   }
 });

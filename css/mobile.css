@@ -1,0 +1,67 @@
+html {
+	font-size: 8px;
+}
+
+section#clients #clients-list {
+	justify-content: space-around;
+}
+
+section#clients #clients-list > img {
+	width: 90px;
+	height: 90px;
+}
+
+section#contact {
+	display: block;
+}
+
+#company-img {
+	display: none;
+}
+
+@media screen and (max-width: 560px) {
+	header #navbar {
+		flex-direction: column;
+		height: 12rem;
+		padding: 2rem;
+	}
+
+	header #navbar #logo {
+		font-size: 3rem;
+	}
+
+	header #showcase h2 {
+		margin-top: 60px;
+	}
+
+	section#services {
+		display: block;
+	}
+
+	section#services .services-box {
+		flex: 1;
+		margin: 0 1rem 2.8rem 1rem;
+	}
+
+	section#services .services-box:last-child {
+		margin-bottom: 0;
+	}
+
+	section#about {
+		display: block;
+	}
+
+	section#about #about-img {
+		width: 100%;
+		height: 300px;
+	}
+
+	section#clients #clients-list > img {
+		width: 80px;
+		height: 80px;
+	}
+
+	section#clients #clients-list > img:last-child {
+		display: none;
+	}
+}
